@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "priority": 1,
+        "action": { "type": "block" },
+        "condition": {
+            "urlFilter": "|https://www.google.com/search?client=safari&*&q=*&ie=UTF-8&oe=UTF-8|",
+            "resourceTypes": [ "main_frame" ]
+        }
+    },
+    {
+        "id": 2,
+        "priority": 1,
+        "action": { "type": "block" },
+        "condition": {
+            "urlFilter": "|https://search.yahoo.com/search?ei=utf-8&fr=aaplw&p=*",
+            "resourceTypes": [ "main_frame" ]
+        }
+    },
+    {
+        "id": 3,
+        "priority": 1,
+        "action": { "type": "block" },
+        "condition": {
+            "urlFilter": "|https://www.bing.com/search?q=*&form=APMCS1&PC=APMC|",
+            "resourceTypes": [ "main_frame" ]
+        }
+    },
+    {
+        "id": 4,
+        "priority": 1,
+        "action": { "type": "block" },
+        "condition": {
+            "urlFilter": "|https://duckduckgo.com/?q=*&t=osx|",
+            "resourceTypes": [ "main_frame" ]
+        }
+    },
+    {
+        "id": 5,
+        "priority": 1,
+        "action": { "type": "block" },
+        "condition": {
+            "urlFilter": "|https://www.ecosia.org/search?q=*&tts=st_asaf_macos|",
+            "resourceTypes": [ "main_frame" ]
+        }
+    }
+]
