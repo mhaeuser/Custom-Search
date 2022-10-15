@@ -18,6 +18,14 @@
         "service_worker": "background.js"
     },
 
+    "declarative_net_request" : {
+        "rule_resources" : [{
+            "id": "block_search",
+            "enabled": true,
+            "path": "block_search.json"
+        }]
+    },
+
     "action": {
         "default_popup": "popup.html",
         "default_icon": {
@@ -28,14 +36,6 @@
             "48": "images/toolbar-icon-48.png",
             "72": "images/toolbar-icon-72.png"
         }
-    },
-
-    "declarative_net_request" : {
-        "rule_resources" : [{
-            "id": "block_search",
-            "enabled": true,
-            "path": "block_search.json"
-        }]
     },
 
     "permissions": [
