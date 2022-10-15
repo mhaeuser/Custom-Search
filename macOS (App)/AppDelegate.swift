@@ -8,7 +8,8 @@ import Cocoa
 @main
 private class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationShouldTerminateAfterLastWindowClosed(_: NSApplication)
-        -> Bool {
+        -> Bool
+    {
         return true
     }
 }
