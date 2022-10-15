@@ -1,14 +1,12 @@
 //
-//  AppDelegate.swift
-//  iOS (App)
-//
-//  Created by User on 14.10.22.
+// Copyright (C) 2022 Marvin Häuser. All rights reserved.
+// SPDX-License-Identifier: BSD-3-Clause
 //
 
 import UIKit
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate {
+internal class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(

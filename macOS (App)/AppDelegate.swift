@@ -1,17 +1,14 @@
 //
-//  AppDelegate.swift
-//  macOS (App)
-//
-//  Created by User on 14.10.22.
+// Copyright (C) 2022 Marvin Häuser. All rights reserved.
+// SPDX-License-Identifier: BSD-3-Clause
 //
 
 import Cocoa
 
 @main
-class AppDelegate: NSObject, NSApplicationDelegate {
+private class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationShouldTerminateAfterLastWindowClosed(_: NSApplication)
-        -> Bool
-    {
+        -> Bool {
         return true
     }
 }

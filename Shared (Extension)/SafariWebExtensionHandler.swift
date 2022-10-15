@@ -1,14 +1,11 @@
 //
-//  SafariWebExtensionHandler.swift
-//  Shared (Extension)
-//
-//  Created by User on 14.10.22.
+// Copyright (C) 2022 Marvin Häuser. All rights reserved.
+// SPDX-License-Identifier: BSD-3-Clause
 //
 
-import os.log
 import SafariServices
 
-class SafariWebExtensionHandler: NSObject, NSExtensionRequestHandling {
+internal class SafariWebExtensionHandler: NSObject, NSExtensionRequestHandling {
     func beginRequest(with context: NSExtensionContext) {
         context.completeRequest(
             returningItems: [],

@@ -1,8 +1,6 @@
 //
-//  ViewController.swift
-//  Shared (App)
-//
-//  Created by User on 14.10.22.
+// Copyright (C) 2022 Marvin Häuser. All rights reserved.
+// SPDX-License-Identifier: BSD-3-Clause
 //
 
 import WebKit
@@ -11,7 +9,7 @@ import SafariServices
 
 let extensionBundleIdentifier = "me.mhaeuser.CustomSearch.Extension"
 
-class ViewController: NSViewController {
+private class ViewController: NSViewController {
     @IBOutlet var stateLabel: NSTextField!
     @IBOutlet var openSettingsButton: NSButton!
 

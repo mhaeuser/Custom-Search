@@ -1,13 +1,11 @@
 //
-//  SceneDelegate.swift
-//  iOS (App)
-//
-//  Created by User on 14.10.22.
+// Copyright (C) 2022 Marvin Häuser. All rights reserved.
+// SPDX-License-Identifier: BSD-3-Clause
 //
 
 import UIKit
 
-class SceneDelegate: UIResponder, UIWindowSceneDelegate {
+internal class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
 
     func scene(
