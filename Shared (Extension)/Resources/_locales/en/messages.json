@@ -4,7 +4,7 @@
         "description": "The display name for the extension."
     },
     "extension_description": {
-        "message": "This is Custom Search. You should tell us what your extension does here.",
+        "message": "Customize your search engine.",
         "description": "Description of what the extension does."
     }
 }
