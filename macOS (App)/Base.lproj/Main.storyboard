@@ -151,6 +151,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Icon" width="384" height="384"/>
+        <image name="Icon" width="128" height="128"/>
     </resources>
 </document>

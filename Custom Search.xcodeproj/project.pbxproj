@@ -14,8 +14,6 @@
 		CE507C4528F9A8180036F262 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE507C4328F9A8180036F262 /* Main.storyboard */; };
 		CE507C4C28F9A8180036F262 /* Custom Search Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = CE507C4B28F9A8180036F262 /* Custom Search Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CE507C5628F9A8180036F262 /* Custom Search Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = CE507C5528F9A8180036F262 /* Custom Search Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		CE507C5E28F9A8180036F262 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CE507C1928F9A8170036F262 /* Icon.png */; };
-		CE507C5F28F9A8180036F262 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CE507C1928F9A8170036F262 /* Icon.png */; };
 		CE507C6528F9A8180036F262 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE507C1C28F9A8170036F262 /* ViewController.swift */; };
 		CE507C6628F9A8180036F262 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE507C1D28F9A8180036F262 /* Assets.xcassets */; };
 		CE507C6728F9A8180036F262 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE507C1D28F9A8180036F262 /* Assets.xcassets */; };
@@ -82,7 +80,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		CE507C1928F9A8170036F262 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		CE507C1C28F9A8170036F262 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CE507C1D28F9A8180036F262 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE507C1F28F9A8180036F262 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
@@ -126,17 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				CE507C1D28F9A8180036F262 /* Assets.xcassets */,
-				CE507C1628F9A8170036F262 /* Resources */,
 			);
 			path = "Shared (App)";
-			sourceTree = "<group>";
-		};
-		CE507C1628F9A8170036F262 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				CE507C1928F9A8170036F262 /* Icon.png */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		CE507C1E28F9A8180036F262 /* Shared (Extension) */ = {
@@ -326,7 +314,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE507C5E28F9A8180036F262 /* Icon.png in Resources */,
 				CE507C6628F9A8180036F262 /* Assets.xcassets in Resources */,
 				CE507C3928F9A8180036F262 /* Main.storyboard in Resources */,
 			);
@@ -336,7 +323,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE507C5F28F9A8180036F262 /* Icon.png in Resources */,
 				CE507C4528F9A8180036F262 /* Main.storyboard in Resources */,
 				CE507C6728F9A8180036F262 /* Assets.xcassets in Resources */,
 			);
