@@ -1,11 +1,11 @@
 const filter = {
     url:
     [
-        {urlPrefix: "https://", hostEquals: "www.google.com", pathEquals: "/search", queryPrefix: "client=safari&", queryContains: "&q=", querySuffix: "&ie=UTF-8&oe=UTF-8"},
-        {urlPrefix: "https://", hostEquals: "search.yahoo.com", pathEquals: "/search", queryPrefix: "ei=utf-8&fr=aaplw&p="},
-        {urlPrefix: "https://", hostEquals: "www.bing.com", pathEquals: "/search", queryPrefix: "q=", querySuffix: "&form=APMCS1&PC=APMC"},
-        {urlPrefix: "https://", hostEquals: "duckduckgo.com", pathEquals: "/", queryPrefix: "q=", querySuffix: "&t=osx"},
-        {urlPrefix: "https://", hostEquals: "www.ecosia.org", pathEquals: "/search", queryPrefix: "q=", querySuffix: "&tts=st_asaf_macos"}
+        {urlPrefix: "https://www.google.com/search?client=safari&", queryContains: "&q=", querySuffix: "&ie=UTF-8&oe=UTF-8"},
+        {urlPrefix: "https://search.yahoo.com/search?ei=utf-8&fr=aaplw&p="},
+        {urlPrefix: "https://www.bing.com/search?q=", querySuffix: "&form=APMCS1&PC=APMC"},
+        {urlPrefix: "https://duckduckgo.com/?q=", querySuffix: "&t=osx"},
+        {urlPrefix: "https://www.ecosia.org/search?q=", querySuffix: "&tts=st_asaf_macos"}
     ],
     types: ["main_frame"]
 };
