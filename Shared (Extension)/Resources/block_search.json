@@ -4,7 +4,7 @@
         "priority": 1,
         "action": { "type": "block" },
         "condition": {
-            "urlFilter": "|https://www.google.com/search?client=safari&*&q=*&ie=UTF-8&oe=UTF-8|",
+            "urlFilter": "|https://www.google.*/search?client=safari&*&q=*&ie=UTF-8&oe=UTF-8|",
             "resourceTypes": [ "main_frame" ]
         }
     },
@@ -13,7 +13,7 @@
         "priority": 1,
         "action": { "type": "block" },
         "condition": {
-            "urlFilter": "|https://search.yahoo.com/search?ei=utf-8&fr=aaplw&p=*",
+            "urlFilter": "|https://www.google.*/search?q=*&ie=UTF-8&oe=UTF-8&*&client=safari|",
             "resourceTypes": [ "main_frame" ]
         }
     },
@@ -22,7 +22,7 @@
         "priority": 1,
         "action": { "type": "block" },
         "condition": {
-            "urlFilter": "|https://www.bing.com/search?q=*&form=APMCS1&PC=APMC|",
+            "urlFilter": "||search.yahoo.com/search?ei=utf-8&fr=aaplw&p=*",
             "resourceTypes": [ "main_frame" ]
         }
     },
@@ -31,7 +31,7 @@
         "priority": 1,
         "action": { "type": "block" },
         "condition": {
-            "urlFilter": "|https://duckduckgo.com/?q=*&t=osx|",
+            "urlFilter": "||search.yahoo.com/search?p=*&fr=iphone&.tsrc=apple|",
             "resourceTypes": [ "main_frame" ]
         }
     },
@@ -40,7 +40,52 @@
         "priority": 1,
         "action": { "type": "block" },
         "condition": {
+            "urlFilter": "|https://www.bing.com/search?q=*&form=APMCS1&PC=APMC|",
+            "resourceTypes": [ "main_frame" ]
+        }
+    },
+    {
+        "id": 6,
+        "priority": 1,
+        "action": { "type": "block" },
+        "condition": {
+            "urlFilter": "|https://www.bing.com/search?q=*&form=APIPH1&PC=APPL|",
+            "resourceTypes": [ "main_frame" ]
+        }
+    },
+    {
+        "id": 7,
+        "priority": 1,
+        "action": { "type": "block" },
+        "condition": {
+            "urlFilter": "|https://duckduckgo.com/?q=*&t=osx|",
+            "resourceTypes": [ "main_frame" ]
+        }
+    },
+    {
+        "id": 8,
+        "priority": 1,
+        "action": { "type": "block" },
+        "condition": {
+            "urlFilter": "|https://duckduckgo.com/?q=*&t=iphone|",
+            "resourceTypes": [ "main_frame" ]
+        }
+    },
+    {
+        "id": 9,
+        "priority": 1,
+        "action": { "type": "block" },
+        "condition": {
             "urlFilter": "|https://www.ecosia.org/search?q=*&tts=st_asaf_macos|",
+            "resourceTypes": [ "main_frame" ]
+        }
+    },
+    {
+        "id": 10,
+        "priority": 1,
+        "action": { "type": "block" },
+        "condition": {
+            "urlFilter": "|https://www.ecosia.org/search?q=*&tts=st_asaf_iphone|",
             "resourceTypes": [ "main_frame" ]
         }
     }

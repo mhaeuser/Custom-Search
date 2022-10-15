@@ -109,37 +109,6 @@
 		CEBC92EC28FA107F00BC581D /* block_search.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = block_search.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXFrameworksBuildPhase section */
-		CE507C2A28F9A8180036F262 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CE507C3C28F9A8180036F262 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CE507C4828F9A8180036F262 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CE507C5228F9A8180036F262 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
 /* Begin PBXGroup section */
 		CE507C1028F9A8170036F262 = {
 			isa = PBXGroup;
@@ -244,7 +213,6 @@
 			buildConfigurationList = CE507C8028F9A8180036F262 /* Build configuration list for PBXNativeTarget "Custom Search (iOS)" */;
 			buildPhases = (
 				CE507C2928F9A8180036F262 /* Sources */,
-				CE507C2A28F9A8180036F262 /* Frameworks */,
 				CE507C2B28F9A8180036F262 /* Resources */,
 				CE507C7F28F9A8180036F262 /* Embed Foundation Extensions */,
 			);
@@ -263,7 +231,6 @@
 			buildConfigurationList = CE507C8728F9A8180036F262 /* Build configuration list for PBXNativeTarget "Custom Search (macOS)" */;
 			buildPhases = (
 				CE507C3B28F9A8180036F262 /* Sources */,
-				CE507C3C28F9A8180036F262 /* Frameworks */,
 				CE507C3D28F9A8180036F262 /* Resources */,
 				CE507C8628F9A8180036F262 /* Embed Foundation Extensions */,
 			);
@@ -282,7 +249,6 @@
 			buildConfigurationList = CE507C7C28F9A8180036F262 /* Build configuration list for PBXNativeTarget "Custom Search Extension (iOS)" */;
 			buildPhases = (
 				CE507C4728F9A8180036F262 /* Sources */,
-				CE507C4828F9A8180036F262 /* Frameworks */,
 				CE507C4928F9A8180036F262 /* Resources */,
 			);
 			buildRules = (
@@ -299,7 +265,6 @@
 			buildConfigurationList = CE507C8328F9A8180036F262 /* Build configuration list for PBXNativeTarget "Custom Search Extension (macOS)" */;
 			buildPhases = (
 				CE507C5128F9A8180036F262 /* Sources */,
-				CE507C5228F9A8180036F262 /* Frameworks */,
 				CE507C5328F9A8180036F262 /* Resources */,
 			);
 			buildRules = (
@@ -708,6 +673,8 @@
 		CE507C7D28F9A8180036F262 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Shared (Extension)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "CustomSearch Extension";
@@ -733,6 +700,8 @@
 		CE507C7E28F9A8180036F262 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Shared (Extension)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "CustomSearch Extension";
@@ -762,6 +731,8 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (App)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Custom Search";
@@ -794,6 +765,8 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (App)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Custom Search";
