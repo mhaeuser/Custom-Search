@@ -1,27 +1,3 @@
-function configRules(url) {
-    const query_url = url || "";
-
-    if (query_url === "") {
-        browser.declarativeNetRequest.updateEnabledRulesets(
-            { disableRulesetIds: [ "block_search" ] }
-        );
-    } else {
-        browser.declarativeNetRequest.updateEnabledRulesets(
-            { enableRulesetIds: [ "block_search" ] }
-        );
-    }
-};
-
-browser.storage.sync.onChanged.addListener((changes) => {
-    if (Object.keys(changes).includes("query_url")) {
-        configRules(changes["query_url"].newValue);
-    }
-});
-
-browser.storage.sync.get(["query_url"], ({ query_url }) => {
-    configRules(query_url);
-});
-
 browser.webNavigation.onBeforeNavigate.addListener((details) => {
     browser.storage.sync.get(["query_url"], ({ query_url }) => {
         if (query_url === "") {
