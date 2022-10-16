@@ -9,7 +9,7 @@ import WebKit
 
 let extensionBundleIdentifier = "me.mhaeuser.CustomSearch.Extension"
 
-private class ViewController: NSViewController {
+internal class ViewController: NSViewController {
     @IBOutlet var stateLabel: NSTextField!
     @IBOutlet var openSettingsButton: NSButton!
 
