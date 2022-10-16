@@ -102,7 +102,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="425" height="340"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nxS-xx-1tG">
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wpz-XA-VSa" userLabel="Icon Image">
+                                <rect key="frame" x="149" y="172" width="128" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="0wI-uY-082"/>
+                                    <constraint firstAttribute="width" constant="128" id="BIz-9d-dVr"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Icon" id="gkT-UF-2Gr"/>
+                            </imageView>
+                            <textField hidden="YES" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="Zc2-UK-sM5" userLabel="Unknown State Settings Label">
+                                <rect key="frame" x="38" y="100" width="349" height="32"/>
+                                <textFieldCell key="cell" selectable="YES" alignment="center" title="You can turn on Custom Search’s extension in the Extensions section of Safari Settings." id="ScG-Yz-lHQ">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField hidden="YES" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="jXN-xV-zAu" userLabel="Off State Settings Label">
+                                <rect key="frame" x="38" y="100" width="349" height="32"/>
+                                <textFieldCell key="cell" selectable="YES" alignment="center" title="Custom Search’s extension is currently off. You can turn it on in the Extensions section of Safari Settings." id="wof-s5-W6i">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField hidden="YES" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="pzQ-4J-eOq" userLabel="On State Settings Label">
+                                <rect key="frame" x="38" y="100" width="349" height="32"/>
+                                <textFieldCell key="cell" selectable="YES" alignment="center" title="Custom Search’s extension is currently on. You can turn it off in the Extensions section of Safari Settings." id="UHQ-s8-UFJ">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button hidden="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nxS-xx-1tG" userLabel="Open Settings Button">
                                 <rect key="frame" x="100" y="33" width="226" height="32"/>
                                 <buttonCell key="cell" type="push" title="Quit and Open Safari Settings…" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="H5k-at-K7e">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -112,37 +144,83 @@
                                     <action selector="openSettingsAction:" target="XfG-lQ-9wD" id="Hxp-VV-76r"/>
                                 </connections>
                             </button>
-                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="Zc2-UK-sM5">
+                            <textField hidden="YES" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="Sxb-Qe-vNu" userLabel="Unknown State Preferences Label">
                                 <rect key="frame" x="38" y="100" width="349" height="32"/>
-                                <textFieldCell key="cell" selectable="YES" alignment="center" title="You can turn on Custom Search’s extension in the Extensions section of Safari Settings." id="ScG-Yz-lHQ">
+                                <textFieldCell key="cell" selectable="YES" alignment="center" title="You can turn on Custom Search’s extension in Safari Extensions preferences." id="uQj-x2-vTN">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wpz-XA-VSa">
-                                <rect key="frame" x="149" y="172" width="128" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="0wI-uY-082"/>
-                                    <constraint firstAttribute="width" constant="128" id="BIz-9d-dVr"/>
-                                </constraints>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Icon" id="gkT-UF-2Gr"/>
-                            </imageView>
+                            <textField hidden="YES" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="x72-3y-o1A" userLabel="Off State Preferences Label">
+                                <rect key="frame" x="38" y="100" width="349" height="32"/>
+                                <textFieldCell key="cell" selectable="YES" alignment="center" title="Custom Search’s extension is currently off. You can turn it on in Safari Extensions preferences." id="sSt-KS-gzi">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField hidden="YES" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="4CW-BC-B9U" userLabel="On State Preferences Label">
+                                <rect key="frame" x="38" y="100" width="349" height="32"/>
+                                <textFieldCell key="cell" selectable="YES" alignment="center" title="Custom Search’s extension is currently on. You can turn it off in Safari Extensions preferences." id="N6n-gi-x0G">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button hidden="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bnN-VQ-5RM" userLabel="Open Preferences Button">
+                                <rect key="frame" x="55" y="33" width="316" height="32"/>
+                                <buttonCell key="cell" type="push" title="Quit and Open Safari Extensions Preferences…" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Z1G-0M-IBU">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="openSettingsAction:" target="XfG-lQ-9wD" id="ZwM-kZ-scm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="bnN-VQ-5RM" firstAttribute="top" secondItem="4CW-BC-B9U" secondAttribute="bottom" constant="40" id="0gk-TB-HXN"/>
+                            <constraint firstAttribute="trailing" secondItem="4CW-BC-B9U" secondAttribute="trailing" constant="40" id="2MW-ci-hfY"/>
+                            <constraint firstItem="4CW-BC-B9U" firstAttribute="top" secondItem="wpz-XA-VSa" secondAttribute="bottom" constant="40" id="4J9-JR-uwW"/>
+                            <constraint firstItem="jXN-xV-zAu" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="40" id="5uk-2c-Go1"/>
+                            <constraint firstItem="bnN-VQ-5RM" firstAttribute="top" secondItem="Sxb-Qe-vNu" secondAttribute="bottom" constant="40" id="6Lt-8A-dps"/>
                             <constraint firstItem="nxS-xx-1tG" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="B7H-tI-rqU"/>
                             <constraint firstItem="wpz-XA-VSa" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="E7O-3J-UXA"/>
                             <constraint firstAttribute="trailing" secondItem="Zc2-UK-sM5" secondAttribute="trailing" constant="40" id="ER6-G5-Cxv"/>
+                            <constraint firstAttribute="trailing" secondItem="jXN-xV-zAu" secondAttribute="trailing" constant="40" id="EVu-cQ-nhq"/>
+                            <constraint firstItem="bnN-VQ-5RM" firstAttribute="top" secondItem="x72-3y-o1A" secondAttribute="bottom" constant="40" id="Fkd-Ad-lbG"/>
+                            <constraint firstItem="nxS-xx-1tG" firstAttribute="top" secondItem="pzQ-4J-eOq" secondAttribute="bottom" constant="40" id="GiJ-4S-N13"/>
+                            <constraint firstItem="Zc2-UK-sM5" firstAttribute="top" secondItem="wpz-XA-VSa" secondAttribute="bottom" constant="40" id="HbL-zR-rPz"/>
                             <constraint firstItem="wpz-XA-VSa" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="40" id="IPT-lL-IIu"/>
-                            <constraint firstItem="Zc2-UK-sM5" firstAttribute="top" secondItem="wpz-XA-VSa" secondAttribute="bottom" constant="40" id="OyE-aa-dFp"/>
+                            <constraint firstItem="pzQ-4J-eOq" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="40" id="Jd2-Ls-ptq"/>
+                            <constraint firstItem="pzQ-4J-eOq" firstAttribute="top" secondItem="wpz-XA-VSa" secondAttribute="bottom" constant="40" id="LkM-fm-eUp"/>
+                            <constraint firstItem="bnN-VQ-5RM" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="Pme-2b-KId"/>
+                            <constraint firstItem="x72-3y-o1A" firstAttribute="top" secondItem="wpz-XA-VSa" secondAttribute="bottom" constant="40" id="TaU-2g-aTd"/>
+                            <constraint firstAttribute="trailing" secondItem="Sxb-Qe-vNu" secondAttribute="trailing" constant="40" id="XN9-ng-QNc"/>
+                            <constraint firstItem="Sxb-Qe-vNu" firstAttribute="top" secondItem="wpz-XA-VSa" secondAttribute="bottom" constant="40" id="Xte-E3-UPu"/>
                             <constraint firstItem="nxS-xx-1tG" firstAttribute="top" secondItem="Zc2-UK-sM5" secondAttribute="bottom" constant="40" id="bg0-4Q-6DT"/>
                             <constraint firstItem="Zc2-UK-sM5" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="40" id="ezk-WH-ccA"/>
+                            <constraint firstItem="x72-3y-o1A" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="40" id="gYO-mh-7sE"/>
                             <constraint firstAttribute="bottom" secondItem="nxS-xx-1tG" secondAttribute="bottom" constant="40" id="nXE-YX-pJg"/>
+                            <constraint firstAttribute="bottom" secondItem="bnN-VQ-5RM" secondAttribute="bottom" constant="40" id="p62-aW-4Xy"/>
+                            <constraint firstItem="nxS-xx-1tG" firstAttribute="top" secondItem="jXN-xV-zAu" secondAttribute="bottom" constant="40" id="sYr-36-BVx"/>
+                            <constraint firstItem="4CW-BC-B9U" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="40" id="tk1-Fi-vlV"/>
+                            <constraint firstAttribute="trailing" secondItem="pzQ-4J-eOq" secondAttribute="trailing" constant="40" id="tzV-5p-9jl"/>
+                            <constraint firstAttribute="trailing" secondItem="x72-3y-o1A" secondAttribute="trailing" constant="40" id="w7e-rY-fHR"/>
+                            <constraint firstItem="Sxb-Qe-vNu" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="40" id="w7k-tl-6gY"/>
+                            <constraint firstItem="jXN-xV-zAu" firstAttribute="top" secondItem="wpz-XA-VSa" secondAttribute="bottom" constant="40" id="yTV-Sa-EK9"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="offPreferencesLabel" destination="x72-3y-o1A" id="oG8-cJ-xy3"/>
+                        <outlet property="offSettingsLabel" destination="jXN-xV-zAu" id="sBR-6p-wal"/>
+                        <outlet property="onPreferencesLabel" destination="4CW-BC-B9U" id="t41-Vn-MRJ"/>
+                        <outlet property="onSettingsLabel" destination="pzQ-4J-eOq" id="hEf-GM-oMD"/>
+                        <outlet property="openPreferencesButton" destination="bnN-VQ-5RM" id="kTM-Vf-CcI"/>
                         <outlet property="openSettingsButton" destination="nxS-xx-1tG" id="esu-9e-EAb"/>
-                        <outlet property="stateLabel" destination="Zc2-UK-sM5" id="3BT-9H-6G2"/>
+                        <outlet property="unknownPreferencesLabel" destination="Sxb-Qe-vNu" id="BvX-dh-O9w"/>
+                        <outlet property="unknownSettingsLabel" destination="Zc2-UK-sM5" id="h06-Gr-olO"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

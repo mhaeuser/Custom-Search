@@ -5,13 +5,19 @@
 
 import Cocoa
 import SafariServices
-import WebKit
 
 let extensionBundleIdentifier = "me.mhaeuser.CustomSearch.Extension"
 
 internal class ViewController: NSViewController {
-    @IBOutlet var stateLabel: NSTextField!
+    @IBOutlet var unknownSettingsLabel: NSTextField!
+    @IBOutlet var offSettingsLabel: NSTextField!
+    @IBOutlet var onSettingsLabel: NSTextField!
     @IBOutlet var openSettingsButton: NSButton!
+
+    @IBOutlet var unknownPreferencesLabel: NSTextField!
+    @IBOutlet var offPreferencesLabel: NSTextField!
+    @IBOutlet var onPreferencesLabel: NSTextField!
+    @IBOutlet var openPreferencesButton: NSButton!
 
     override func viewWillAppear() {
         super.viewWillAppear()
@@ -22,17 +28,11 @@ internal class ViewController: NSViewController {
         }
 
         if useSettingsInsteadOfPreferences {
-            self.stateLabel
-                .stringValue =
-                "You can turn on Custom Search’s extension in the Extensions section of Safari Settings."
-            self.openSettingsButton
-                .stringValue = "Quit and Open Safari Settings…"
+            self.unknownSettingsLabel.isHidden = false
+            self.openSettingsButton.isHidden = false
         } else {
-            self.stateLabel
-                .stringValue =
-                "You can turn on Custom Search’s extension in Safari Extensions preferences."
-            self.openSettingsButton
-                .stringValue = "Quit and Open Safari Extensions Preferences…"
+            self.unknownPreferencesLabel.isHidden = false
+            self.openPreferencesButton.isHidden = false
         }
 
         SFSafariExtensionManager.getStateOfSafariExtension(
@@ -43,25 +43,21 @@ internal class ViewController: NSViewController {
             }
 
             DispatchQueue.main.async {
-                if state.isEnabled {
-                    if useSettingsInsteadOfPreferences {
-                        self.stateLabel
-                            .stringValue =
-                            "Custom Search’s extension is currently on. You can turn it off in the Extensions section of Safari Settings."
+                if useSettingsInsteadOfPreferences {
+                    self.unknownSettingsLabel.isHidden = true
+
+                    if state.isEnabled {
+                        self.onSettingsLabel.isHidden = false
                     } else {
-                        self.stateLabel
-                            .stringValue =
-                            "Custom Search’s extension is currently on. You can turn it off in Safari Extensions preferences."
+                        self.offSettingsLabel.isHidden = false
                     }
                 } else {
-                    if useSettingsInsteadOfPreferences {
-                        self.stateLabel
-                            .stringValue =
-                            "Custom Search’s extension is currently off. You can turn it on in the Extensions section of Safari Settings."
+                    self.unknownPreferencesLabel.isHidden = true
+
+                    if state.isEnabled {
+                        self.onPreferencesLabel.isHidden = false
                     } else {
-                        self.stateLabel
-                            .stringValue =
-                            "Custom Search’s extension is currently off. You can turn it on in Safari Extensions preferences."
+                        self.offPreferencesLabel.isHidden = false
                     }
                 }
             }
