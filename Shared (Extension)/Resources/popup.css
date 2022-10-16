@@ -8,7 +8,3 @@ body {
     font-family: system-ui;
     text-align: center;
 }
-
-@media (prefers-color-scheme: dark) {
-    /* Dark Mode styles go here. */
-}
