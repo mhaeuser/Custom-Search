@@ -131,8 +131,8 @@
 			isa = PBXGroup;
 			children = (
 				CE507C5028F9A8180036F262 /* Info.plist */,
-				CE507C1F28F9A8180036F262 /* SafariWebExtensionHandler.swift */,
 				CE507C2028F9A8180036F262 /* Resources */,
+				CE507C1F28F9A8180036F262 /* SafariWebExtensionHandler.swift */,
 			);
 			path = "Shared (Extension)";
 			sourceTree = "<group>";
@@ -166,10 +166,10 @@
 		CE507C2F28F9A8180036F262 /* iOS (App) */ = {
 			isa = PBXGroup;
 			children = (
+				CE507C3A28F9A8180036F262 /* Info.plist */,
+				CE507C3728F9A8180036F262 /* Main.storyboard */,
 				CE507C3028F9A8180036F262 /* AppDelegate.swift */,
 				CE507C3228F9A8180036F262 /* SceneDelegate.swift */,
-				CE507C3728F9A8180036F262 /* Main.storyboard */,
-				CE507C3A28F9A8180036F262 /* Info.plist */,
 			);
 			path = "iOS (App)";
 			sourceTree = "<group>";
@@ -177,10 +177,10 @@
 		CE507C4028F9A8180036F262 /* macOS (App) */ = {
 			isa = PBXGroup;
 			children = (
+				CE507C4628F9A8180036F262 /* CustomSearch.entitlements */,
+				CE507C4328F9A8180036F262 /* Main.storyboard */,
 				CE507C1C28F9A8170036F262 /* ViewController.swift */,
 				CE507C4128F9A8180036F262 /* AppDelegate.swift */,
-				CE507C4328F9A8180036F262 /* Main.storyboard */,
-				CE507C4628F9A8180036F262 /* CustomSearch.entitlements */,
 			);
 			path = "macOS (App)";
 			sourceTree = "<group>";
