@@ -1,5 +1,5 @@
 browser.webNavigation.onBeforeNavigate.addListener((details) => {
-    browser.storage.sync.get(["query_url"], ({ query_url }) => {
+    browser.storage.sync.get(["query_url"]).then(({ query_url }) => {
         if (query_url === "") {
             return
         }
