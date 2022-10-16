@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="291"
+   width="294"
    height="48"
-   viewBox="0 0 76.993747 12.7"
+   viewBox="0 0 77.787497 12.7"
    version="1.1"
    id="svg52"
    sodipodi:docname="LogoCaption.svg"
@@ -29,13 +29,13 @@
      inkscape:document-units="mm"
      showgrid="false"
      showborder="true"
-     inkscape:zoom="0.93140624"
-     inkscape:cx="74.08153"
-     inkscape:cy="164.80456"
+     inkscape:zoom="21.483997"
+     inkscape:cx="285.81739"
+     inkscape:cy="26.833927"
      inkscape:window-width="1527"
-     inkscape:window-height="1205"
+     inkscape:window-height="1177"
      inkscape:window-x="759"
-     inkscape:window-y="135"
+     inkscape:window-y="107"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg52" />
   <defs
@@ -200,10 +200,10 @@
        style="color-interpolation-filters:sRGB"
        inkscape:label="Icon-Glow"
        id="filter26386"
-       x="-0.15707645"
-       y="-0.2035283"
-       width="1.312841"
-       height="1.3555102">
+       x="-0.15735832"
+       y="-0.20382715"
+       width="1.3138567"
+       height="1.3565354">
       <feFlood
          flood-opacity="0.29826732673267325"
          flood-color="rgb(29,161,237)"
@@ -236,10 +236,10 @@
        style="color-interpolation-filters:sRGB"
        inkscape:label="Icon-Inner-Shadow"
        id="filter26249"
-       x="-0.10534221"
-       y="-0.11201407"
-       width="1.2093725"
-       height="1.2140791">
+       x="-0.10562408"
+       y="-0.11231292"
+       width="1.2103882"
+       height="1.2151043">
       <feFlood
          flood-opacity="0.30445544554455445"
          flood-color="rgb(0,0,0)"
@@ -373,13 +373,13 @@
   </g>
   <text
      xml:space="preserve"
-     transform="matrix(0.44186369,0,0,0.44186369,-9.5239597,-3.2485573)"
+     transform="matrix(0.44186369,0,0,0.44186369,-8.652463,-3.2485573)"
      id="text774"
      style="white-space:pre;shape-inside:url(#rect776);display:inline;fill:#333333"
      inkscape:label="Label"><tspan
        x="54.460938"
        y="28.672775"
-       id="tspan6314"><tspan
+       id="tspan3453"><tspan
          style="font-size:18.6667px;-inkscape-font-specification:'sans-serif, Normal'"
-         id="tspan6312">Custom Search</tspan></tspan></text>
+         id="tspan3451">Custom Search</tspan></tspan></text>
 </svg>
