@@ -8,7 +8,7 @@ import SafariServices
 
 let extensionBundleIdentifier = "me.mhaeuser.CustomSearch.Extension"
 
-internal class ViewController: NSViewController {
+internal final class ViewController: NSViewController {
     @IBOutlet var unknownSettingsLabel: NSTextField!
     @IBOutlet var offSettingsLabel: NSTextField!
     @IBOutlet var onSettingsLabel: NSTextField!

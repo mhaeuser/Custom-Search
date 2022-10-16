@@ -5,7 +5,7 @@
 
 import SafariServices
 
-internal class SafariWebExtensionHandler: NSObject, NSExtensionRequestHandling {
+internal final class SafariWebExtensionHandler: NSObject, NSExtensionRequestHandling {
     func beginRequest(with context: NSExtensionContext) {
         context.completeRequest(
             returningItems: [],

@@ -6,7 +6,7 @@
 import UIKit
 
 @main
-internal class AppDelegate: UIResponder, UIApplicationDelegate {
+internal final class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(
