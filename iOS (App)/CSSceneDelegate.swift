@@ -5,7 +5,7 @@
 
 import UIKit
 
-internal final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
+internal final class CSSceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
 
     func scene(

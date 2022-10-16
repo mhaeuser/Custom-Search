@@ -6,7 +6,7 @@
 import Cocoa
 
 @main
-internal final class AppDelegate: NSObject, NSApplicationDelegate {
+internal final class CSAppDelegate: NSObject, NSApplicationDelegate {
     func applicationShouldTerminateAfterLastWindowClosed(_: NSApplication)
         -> Bool
     {
