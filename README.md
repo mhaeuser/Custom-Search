@@ -2,7 +2,7 @@
 
 -----
 
-Safari Web Extension to declare a custom search engine.
+Safari Web Extension to customize your search engine.
 
 Search queries made from the Safari address bar are appended to the custom search engine URL.
 
