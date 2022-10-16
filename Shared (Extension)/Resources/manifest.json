@@ -20,9 +20,11 @@
         }
     },
 
-    "background": {
-        "service_worker": "background.js"
-    },
+    "permissions": [
+        "webNavigation",
+        "storage",
+        "declarativeNetRequest"
+    ],
 
     "declarative_net_request" : {
         "rule_resources" : [{
@@ -30,6 +32,10 @@
             "enabled": true,
             "path": "block_search.json"
         }]
+    },
+
+    "background": {
+        "service_worker": "background.js"
     },
 
     "action": {
@@ -42,11 +48,5 @@
             "48": "images/toolbar-icon-48.png",
             "72": "images/toolbar-icon-72.png"
         }
-    },
-
-    "permissions": [
-        "webNavigation",
-        "storage",
-        "declarativeNetRequest"
-    ]
+    }
 }
