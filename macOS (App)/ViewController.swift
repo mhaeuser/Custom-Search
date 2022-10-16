@@ -37,10 +37,8 @@ internal class ViewController: NSViewController {
 
         SFSafariExtensionManager.getStateOfSafariExtension(
             withIdentifier: extensionBundleIdentifier
-        ) { state, error in
-            guard let state, error == nil else {
-                // Insert code to inform the user that something went
-                // wrong.
+        ) { state, _ in
+            guard let state else {
                 return
             }
 
@@ -73,13 +71,7 @@ internal class ViewController: NSViewController {
     @IBAction func openSettingsAction(_: Any) {
         SFSafariApplication.showPreferencesForExtension(
             withIdentifier: extensionBundleIdentifier
-        ) { error in
-            guard error == nil else {
-                // Insert code to inform the user that something went
-                // wrong.
-                return
-            }
-
+        ) { _ in
             DispatchQueue.main.async {
                 NSApp.terminate(nil)
             }
