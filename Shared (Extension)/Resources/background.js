@@ -1,19 +1,27 @@
 browser.webNavigation.onBeforeNavigate.addListener((details) => {
-    browser.storage.sync.get(["query_url"]).then(({ query_url }) => {
-        if (query_url === "") {
-            return
-        }
+    try {
+        browser.storage.sync.get(["query_url"]).then(({ query_url }) => {
+            try {
+                if (query_url === "") {
+                    return
+                }
 
-        const url = new URL(details.url);
+                const url = new URL(details.url);
 
-        var queryKey = "q";
-        if (url.hostname.endsWith("search.yahoo.com")) {
-            queryKey = "p";
-        }
+                var queryKey = "q";
+                if (url.hostname.endsWith("search.yahoo.com")) {
+                    queryKey = "p";
+                }
 
-        const query = encodeURIComponent(url.searchParams.get(queryKey));
-        browser.tabs.update(details.tabId, { url: query_url + query });
-    });
+                const query = encodeURIComponent(url.searchParams.get(queryKey));
+                browser.tabs.update(details.tabId, { url: query_url + query });
+            } catch (e) {
+                console.error("%O", e);
+            }
+        });
+    } catch (e) {
+        console.error("%O", e);
+    }
 }, {
     url:
     [
