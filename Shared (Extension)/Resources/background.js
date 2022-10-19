@@ -2,7 +2,7 @@ browser.webNavigation.onBeforeNavigate.addListener((details) => {
     try {
         browser.storage.sync.get(["query_url"]).then(({ query_url }) => {
             try {
-                if (query_url === "") {
+                if ((query_url ?? "") === "") {
                     return
                 }
 
