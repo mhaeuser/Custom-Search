@@ -6,8 +6,8 @@ browser.webNavigation.onBeforeNavigate.addListener((details) => {
       try {
         if ((qurl ?? "") !== "") {
           const url = new URL(details.url);
-          const queryKey = url.hostname.endsWith("yahoo.com") ? "p" : "q";
-          const query = encodeURIComponent(url.searchParams.get(queryKey));
+          const key = url.hostname.endsWith("yahoo.com") ? "p" : "q";
+          const query = encodeURIComponent(url.searchParams.get(key));
           browser.tabs.update(details.tabId, { url: qurl + query });
         }
       } catch (e) {
