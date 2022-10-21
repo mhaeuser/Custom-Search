@@ -4,14 +4,12 @@ browser.webNavigation.onBeforeNavigate.addListener((details) => {
   try {
     browser.storage.sync.get(["query_url"]).then(({ query_url }) => {
       try {
-        if ((query_url ?? "") === "") {
-          return
+        if ((query_url ?? "") !== "") {
+          const url = new URL(details.url);
+          const queryKey = url.hostname.endsWith("yahoo.com") ? "p" : "q";
+          const query = encodeURIComponent(url.searchParams.get(queryKey));
+          browser.tabs.update(details.tabId, { url: query_url + query });
         }
-
-        const url = new URL(details.url);
-        const queryKey = url.hostname.endsWith("yahoo.com") ? "p" : "q";
-        const query = encodeURIComponent(url.searchParams.get(queryKey));
-        browser.tabs.update(details.tabId, { url: query_url + query });
       } catch (e) {
         console.error("%O", e);
       }
