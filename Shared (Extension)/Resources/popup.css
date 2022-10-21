@@ -1,10 +1,10 @@
 :root {
-    color-scheme: light dark;
+  color-scheme: light dark;
 }
 
 body {
-    padding: 10px;
+  padding: 10px;
 
-    font-family: system-ui;
-    text-align: center;
+  font-family: system-ui;
+  text-align: center;
 }
