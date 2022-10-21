@@ -9,7 +9,7 @@ browser.webNavigation.onBeforeNavigate.addListener((details) => {
                 }
 
                 const url = new URL(details.url);
-                const queryKey = url.hostname.endsWith("search.yahoo.com") ? "p" : "q";
+                const queryKey = url.hostname.endsWith("yahoo.com") ? "p" : "q";
                 const query = encodeURIComponent(url.searchParams.get(queryKey));
                 browser.tabs.update(details.tabId, { url: query_url + query });
             } catch (e) {
