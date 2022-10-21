@@ -1,3 +1,5 @@
+"use strict";
+
 browser.webNavigation.onBeforeNavigate.addListener((details) => {
     try {
         browser.storage.sync.get(["query_url"]).then(({ query_url }) => {

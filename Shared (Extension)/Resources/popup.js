@@ -1,3 +1,5 @@
+"use strict";
+
 document.addEventListener("DOMContentLoaded", () => {
     try {
         browser.storage.sync.get(["query_url"]).then(({ query_url }) => {
