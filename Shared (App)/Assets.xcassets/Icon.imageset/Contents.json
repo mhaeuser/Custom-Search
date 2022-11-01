@@ -1,19 +1,29 @@
 {
   "images" : [
     {
-      "filename" : "128.png",
+      "filename" : "Icon-iOS-128.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "256.png",
+      "filename" : "Icon-iOS-256.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "384.png",
+      "filename" : "Icon-iOS-384.png",
       "idiom" : "universal",
       "scale" : "3x"
+    },
+    {
+      "filename" : "Icon-macOS-128.png",
+      "idiom" : "mac",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "Icon-macOS-256.png",
+      "idiom" : "mac",
+      "scale" : "2x"
     }
   ],
   "info" : {
