@@ -53,9 +53,16 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
                                     <items>
-                                        <menuItem title="Custom Search Help" keyEquivalent="?" id="FKE-Sm-Kum">
+                                        <menuItem title="Repository" id="FKE-Sm-Kum">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
-                                                <action selector="showHelp:" target="Ady-hI-5gd" id="y7X-2Q-9no"/>
+                                                <action selector="openRepositoryFromHelp:" target="Voe-Tx-rLC" id="AtZ-2u-tMg"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="License" id="r7b-KO-h0H">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="openLicenseFromHelp:" target="Voe-Tx-rLC" id="frD-6k-dv2"/>
                                             </connections>
                                         </menuItem>
                                     </items>
