@@ -1,4 +1,7 @@
-![](Resources/LogoCaption.png)
+<picture>
+    <source media="(prefers-color-scheme: dark)" srcset="Resources/RepositoryHeader-dark.svg">
+    <img alt="Custom Search" width="512px" src="Resources/RepositoryHeader-light.svg">
+</picture>
 
 -----
 
