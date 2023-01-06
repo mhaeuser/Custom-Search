@@ -1,6 +1,6 @@
 <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/88053191/210952112-25b31297-f141-4f3c-85d0-35103a2b013b.svg">
-    <img alt="Custom Search" width="512px" src="https://user-images.githubusercontent.com/88053191/210952122-c7d18888-68a3-46a0-917d-68ef13f34924.svg">
+    <source media="(prefers-color-scheme: dark)" srcset="Resources/RepositoryHeader-dark.svg">
+    <img alt="Custom Search" width="512px" src="Resources/RepositoryHeader-light.svg">
 </picture>
 
 -----
