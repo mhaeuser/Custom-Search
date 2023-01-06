@@ -12,4 +12,20 @@ internal final class CSAppDelegate: NSObject, NSApplicationDelegate {
     {
         return true
     }
+    
+    /* Populate the Help menu with relevant links */
+    @IBAction func openRepositoryFromHelp(_ sender: NSMenuItem) {
+        let urlString = "https://github.com/mhaeuser/Custom-Search"
+        if let url = URL(string: urlString) {
+            NSWorkspace.shared.open(url)
+        }
+    }
+    
+    
+    @IBAction func openLicenseFromHelp(_ sender: NSMenuItem) {
+        let urlString = "https://github.com/mhaeuser/Custom-Search/blob/main/LICENSE.txt"
+        if let url = URL(string: urlString) {
+            NSWorkspace.shared.open(url)
+        }
+    }
 }
