@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE1D463F2B13B29200461D0F /* rules.js in Resources */ = {isa = PBXBuildFile; fileRef = CE1D463E2B13B29200461D0F /* rules.js */; };
+		CE1D46422B13B36600461D0F /* rules.js in Resources */ = {isa = PBXBuildFile; fileRef = CE1D46412B13B36600461D0F /* rules.js */; };
 		CE507C3128F9A8180036F262 /* CSAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE507C3028F9A8180036F262 /* CSAppDelegate.swift */; };
 		CE507C3328F9A8180036F262 /* CSSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE507C3228F9A8180036F262 /* CSSceneDelegate.swift */; };
 		CE507C3928F9A8180036F262 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE507C3728F9A8180036F262 /* Main.storyboard */; };
@@ -25,16 +27,12 @@
 		CE507C6D28F9A8180036F262 /* images in Resources */ = {isa = PBXBuildFile; fileRef = CE507C2228F9A8180036F262 /* images */; };
 		CE507C6E28F9A8180036F262 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = CE507C2328F9A8180036F262 /* manifest.json */; };
 		CE507C6F28F9A8180036F262 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = CE507C2328F9A8180036F262 /* manifest.json */; };
-		CE507C7028F9A8180036F262 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = CE507C2428F9A8180036F262 /* background.js */; };
-		CE507C7128F9A8180036F262 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = CE507C2428F9A8180036F262 /* background.js */; };
 		CE507C7428F9A8180036F262 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = CE507C2628F9A8180036F262 /* popup.html */; };
 		CE507C7528F9A8180036F262 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = CE507C2628F9A8180036F262 /* popup.html */; };
 		CE507C7628F9A8180036F262 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = CE507C2728F9A8180036F262 /* popup.css */; };
 		CE507C7728F9A8180036F262 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = CE507C2728F9A8180036F262 /* popup.css */; };
 		CE507C7828F9A8180036F262 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = CE507C2828F9A8180036F262 /* popup.js */; };
 		CE507C7928F9A8180036F262 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = CE507C2828F9A8180036F262 /* popup.js */; };
-		CEBC92ED28FA107F00BC581D /* block_search.json in Resources */ = {isa = PBXBuildFile; fileRef = CEBC92EC28FA107F00BC581D /* block_search.json */; };
-		CEBC92EE28FA107F00BC581D /* block_search.json in Resources */ = {isa = PBXBuildFile; fileRef = CEBC92EC28FA107F00BC581D /* block_search.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,13 +78,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CE1D463D2B13A60B00461D0F /* other_engines.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = other_engines.txt; sourceTree = "<group>"; };
+		CE1D463E2B13B29200461D0F /* rules.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = rules.js; sourceTree = "<group>"; };
+		CE1D46412B13B36600461D0F /* rules.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = rules.js; sourceTree = "<group>"; };
 		CE507C1C28F9A8170036F262 /* CSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSViewController.swift; sourceTree = "<group>"; };
 		CE507C1D28F9A8180036F262 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE507C1F28F9A8180036F262 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
 		CE507C2128F9A8180036F262 /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
 		CE507C2228F9A8180036F262 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
 		CE507C2328F9A8180036F262 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
-		CE507C2428F9A8180036F262 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
 		CE507C2628F9A8180036F262 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
 		CE507C2728F9A8180036F262 /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
 		CE507C2828F9A8180036F262 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
@@ -103,13 +103,21 @@
 		CE507C5028F9A8180036F262 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE507C5528F9A8180036F262 /* Custom Search Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Custom Search Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE507C5B28F9A8180036F262 /* CustomSearch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CustomSearch.entitlements; sourceTree = "<group>"; };
-		CEBC92EC28FA107F00BC581D /* block_search.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = block_search.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
+		CE1D46402B13B32A00461D0F /* iOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				CE1D46412B13B36600461D0F /* rules.js */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
 		CE507C1028F9A8170036F262 = {
 			isa = PBXGroup;
 			children = (
+				CE1D46402B13B32A00461D0F /* iOS (Extension) */,
 				CE507C1528F9A8170036F262 /* Shared (App) */,
 				CE507C1E28F9A8180036F262 /* Shared (Extension) */,
 				CE507C2F28F9A8180036F262 /* iOS (App) */,
@@ -142,12 +150,11 @@
 			children = (
 				CE507C2128F9A8180036F262 /* _locales */,
 				CE507C2228F9A8180036F262 /* images */,
-				CE507C2428F9A8180036F262 /* background.js */,
-				CEBC92EC28FA107F00BC581D /* block_search.json */,
 				CE507C2328F9A8180036F262 /* manifest.json */,
 				CE507C2728F9A8180036F262 /* popup.css */,
 				CE507C2628F9A8180036F262 /* popup.html */,
 				CE507C2828F9A8180036F262 /* popup.js */,
+				CE1D463D2B13A60B00461D0F /* other_engines.txt */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -188,6 +195,7 @@
 		CE507C5928F9A8180036F262 /* macOS (Extension) */ = {
 			isa = PBXGroup;
 			children = (
+				CE1D463E2B13B29200461D0F /* rules.js */,
 				CE507C5B28F9A8180036F262 /* CustomSearch.entitlements */,
 			);
 			path = "macOS (Extension)";
@@ -272,7 +280,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1410;
-				LastUpgradeCheck = 1410;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					CE507C2C28F9A8180036F262 = {
 						CreatedOnToolsVersion = 14.1;
@@ -332,12 +340,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE507C7028F9A8180036F262 /* background.js in Resources */,
 				CE507C7628F9A8180036F262 /* popup.css in Resources */,
 				CE507C7428F9A8180036F262 /* popup.html in Resources */,
+				CE1D46422B13B36600461D0F /* rules.js in Resources */,
 				CE507C6C28F9A8180036F262 /* images in Resources */,
 				CE507C6E28F9A8180036F262 /* manifest.json in Resources */,
-				CEBC92ED28FA107F00BC581D /* block_search.json in Resources */,
 				CE507C6A28F9A8180036F262 /* _locales in Resources */,
 				CE507C7828F9A8180036F262 /* popup.js in Resources */,
 			);
@@ -347,12 +354,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE507C7128F9A8180036F262 /* background.js in Resources */,
 				CE507C7728F9A8180036F262 /* popup.css in Resources */,
 				CE507C7528F9A8180036F262 /* popup.html in Resources */,
+				CE1D463F2B13B29200461D0F /* rules.js in Resources */,
 				CE507C6D28F9A8180036F262 /* images in Resources */,
 				CE507C6F28F9A8180036F262 /* manifest.json in Resources */,
-				CEBC92EE28FA107F00BC581D /* block_search.json in Resources */,
 				CE507C6B28F9A8180036F262 /* _locales in Resources */,
 				CE507C7928F9A8180036F262 /* popup.js in Resources */,
 			);
@@ -434,6 +440,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ADDRESS_SANITIZER_CONTAINER_OVERFLOW = YES;
 				CLANG_ANALYZER_GCD_PERFORMANCE = YES;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -539,14 +546,14 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Marvin Häuser. All rights reserved.";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LLVM_LTO = YES_THIN;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				RUN_CLANG_STATIC_ANALYZER = YES;
-				STRIP_INSTALLED_PRODUCT = NO;
-				STRIP_SWIFT_SYMBOLS = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -559,6 +566,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ADDRESS_SANITIZER_CONTAINER_OVERFLOW = YES;
 				CLANG_ANALYZER_GCD_PERFORMANCE = YES;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -659,7 +667,9 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Marvin Häuser. All rights reserved.";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LLVM_LTO = YES_THIN;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -681,7 +691,7 @@
 				INFOPLIST_FILE = "Shared (Extension)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "CustomSearch Extension";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -695,6 +705,9 @@
 				PRODUCT_NAME = "Custom Search Extension";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -708,7 +721,7 @@
 				INFOPLIST_FILE = "Shared (Extension)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "CustomSearch Extension";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -722,6 +735,9 @@
 				PRODUCT_NAME = "Custom Search Extension";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -742,7 +758,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -775,7 +791,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -807,7 +823,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -832,7 +848,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -858,7 +874,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -885,7 +901,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,

@@ -4,7 +4,7 @@
 
   "name": "__MSG_extension_name__",
   "description": "__MSG_extension_description__",
-  "version": "1.0",
+  "version": "2.0",
 
   "icons": {
     "48": "images/icon-48.png",
@@ -16,27 +16,18 @@
 
   "browser_specific_settings": {
     "safari": {
-      "strict_min_version": "15.0"
+      "strict_min_version": "15.4"
     }
   },
 
   "permissions": [
-    "webNavigation",
     "storage",
-    "declarativeNetRequest"
+    "declarativeNetRequestWithHostAccess"
   ],
-
-  "declarative_net_request" : {
-    "rule_resources" : [{
-      "id": "block_search",
-      "enabled": true,
-      "path": "block_search.json"
-    }]
-  },
-
-  "background": {
-    "service_worker": "background.js"
-  },
+  
+  "host_permissions": [
+    "https://www.ecosia.org/search?q=*"
+  ],
 
   "action": {
     "default_popup": "popup.html",
